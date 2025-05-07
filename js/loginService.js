@@ -9,6 +9,7 @@ function login(email, password){
 	localStorage.removeItem('token')
 	let message = ''
 	let alertType = ''
+	
 	const REQRES_ENDPOINT = 'https://reqres.in/api/login'
 	fetch(REQRES_ENDPOINT, {
 		method: 'POST',
